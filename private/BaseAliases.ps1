@@ -13,7 +13,7 @@ function Set-TypeShellBaseAliases {
         'Filter'       = 'Where-Object'
         'Iterate'      = 'ForEach-Object'
         'Unique'       = 'Get-Unique'
-        'Count'        = 'Measure-Object'
+        'Size'         = 'Measure-Object'
         'Fetch'        = 'Invoke-RestMethod'
         'Request'      = 'Invoke-WebRequest'
         'Procs'        = 'Get-Process'
