@@ -52,15 +52,21 @@ Just use what you already know from literally every other language:
 
 ### Aliases
 
-Because `Write-Output` is too many keystrokes:
+Because life is too short for `Invoke-RestMethod`:
 
 | Alias | Command |
 |-------|---------|
 | `Print` | `Write-Output` |
 | `PrintError` | `Write-Error` |
-| `PrintWarning` | `Write-Warning` |
-| `PrintVerbose` | `Write-Verbose` |
-| `PrintDebug` | `Write-Debug` |
+| `Find` | `Get-ChildItem` |
+| `Grep` | `Select-String` |
+| `Filter` | `Where-Object` |
+| `Iterate` | `ForEach-Object` |
+| `Fetch` | `Invoke-RestMethod` |
+| `Request` | `Invoke-WebRequest` |
+| `Procs` | `Get-Process` |
+
+...and many more. See [BaseAliases.ps1](private/BaseAliases.ps1) for the full list.
 
 ## Requirements
 
