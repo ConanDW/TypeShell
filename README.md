@@ -135,4 +135,5 @@ Along with a C# transpiler engine so that you can write TypeShell scripts native
 
 ## License
 
-(c) Cameron Day. All rights reserved.
+GNU General Public License v3.0
+(c) 2026 Cameron Day. All rights reserved.

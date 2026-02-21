@@ -16,7 +16,7 @@
     Author            = 'Cameron Day'
 
     # Copyright statement for this module
-    Copyright         = '(c) Cameron Day. All rights reserved.'
+    Copyright         = '(c) 2026 Cameron Day. All rights reserved.'
 
     # Description of the functionality provided by this module
     Description       = 'A strongly typed shell for PowerShell. Fixes the lack of type safety in PowerShell. Provides a more robust and reliable shell for automation and scripting. Includes fixes for common PowerShell issues/complaints.'
