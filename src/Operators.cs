@@ -1,3 +1,0 @@
-public readonly interface Operators {
-    
-}

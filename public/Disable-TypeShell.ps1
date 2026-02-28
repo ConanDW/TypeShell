@@ -8,6 +8,8 @@ function Disable-TypeShell {
     Process {
         Remove-PSReadLineKeyHandler -Chord 'Enter'
         Remove-PSReadLineKeyHandler -Chord 'Spacebar'
+        Remove-PSReadLineKeyHandler -Chord '&&'
+        Remove-PSReadLineKeyHandler -Chord '||'
         Remove-Module -Name TypeShell
         Set-StrictMode -Off
     }
