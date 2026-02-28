@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>Library</OutputType>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <Deterministic>true</Deterministic>
+        <AssemblyName>TypeShell</AssemblyName>
+        <RootNamespace>TypeShell</RootNamespace>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="System.Management.Automation" Version="7.5.0" />
+    </ItemGroup>
+</Project>
