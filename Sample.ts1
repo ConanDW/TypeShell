@@ -1,0 +1,6 @@
+string var = 1
+string varTwo = 2
+string varThree = 3
+
+var < varTwo
+varTwo < varThree

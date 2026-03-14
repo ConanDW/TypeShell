@@ -1,28 +1,28 @@
 @{
 
     # Script module or binary module file associated with this manifest.
-    RootModule        = 'TypeShell.psm1'
+    RootModule         = 'TypeShell.psm1'
 
     # Version number of this module.
-    ModuleVersion     = '0.1.0'
+    ModuleVersion      = '0.1.0'
 
     # Supported PSEditions
     # CompatiblePSEditions = @()
 
     # ID used to uniquely identify this module
-    GUID              = '830cf521-5583-4134-97d5-81e793c25c4a'
+    GUID               = '830cf521-5583-4134-97d5-81e793c25c4a'
 
     # Author of this module
-    Author            = 'Cameron Day'
+    Author             = 'Cameron Day'
 
     # Copyright statement for this module
-    Copyright         = '(c) 2026 Cameron Day. All rights reserved.'
+    Copyright          = '(c) 2026 Cameron Day. All rights reserved.'
 
     # Description of the functionality provided by this module
-    Description       = 'A strongly typed shell for PowerShell. Fixes the lack of type safety in PowerShell. Provides a more robust and reliable shell for automation and scripting. Includes fixes for common PowerShell issues/complaints.'
+    Description        = 'A strongly typed shell for PowerShell. Fixes the lack of type safety in PowerShell. Provides a more robust and reliable shell for automation and scripting. Includes fixes for common PowerShell issues/complaints.'
 
     # Minimum version of the PowerShell engine required by this module
-    PowerShellVersion = '7.0'
+    PowerShellVersion  = '7.0'
 
     # Name of the PowerShell host required by this module
     # PowerShellHostName = ''
@@ -43,7 +43,7 @@
     #RequiredModules       = @()
 
     # Assemblies that must be loaded prior to importing this module
-    # RequiredAssemblies = @()
+    RequiredAssemblies = @('TypeShell.dll')
 
     # Script files (.ps1) that are run in the caller's environment prior to importing this module.
     # ScriptsToProcess = @()
@@ -55,19 +55,19 @@
     # FormatsToProcess = @()
 
     # Modules to import as nested modules of the module specified in RootModule/ModuleToProcess
-    # NestedModules     = @()
+    NestedModules      = @('TypeShell.dll')
 
     # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-    FunctionsToExport = @('Enable-TypeShell', 'Disable-TypeShell')
+    FunctionsToExport  = @('Enable-TypeShell', 'Disable-TypeShell')
 
     # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
-    CmdletsToExport   = @()
+    CmdletsToExport    = @('ConvertFrom-TypeShell')
 
     # Variables to export from this module
-    VariablesToExport = @()
+    VariablesToExport  = @()
 
     # Aliases to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no aliases to export.
-    AliasesToExport   = @()
+    AliasesToExport    = @()
 
     # DSC resources to export from this module
     # DscResourcesToExport = @()
@@ -79,7 +79,7 @@
     # FileList = @()
 
     # Private data to pass to the module specified in RootModule/ModuleToProcess. This may also contain a PSData hashtable with additional module metadata used by PowerShell.
-    PrivateData       = @{
+    PrivateData        = @{
 
         PSData = @{
 

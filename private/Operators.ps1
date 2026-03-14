@@ -42,7 +42,7 @@ function Set-TypeShellOperators {
             [Microsoft.PowerShell.PSConsoleReadLine]::Insert(' ')
         }
     }
-    Set-PSReadLineKeyHandler -Chord '&&' -BriefDescription "Logical AND" -ScriptBlock {
+    Set-PSReadLineKeyHandler -Chord '&' -BriefDescription "Logical AND" -ScriptBlock {
         param($key, $arg)
         $line = $null
         $cursor = $null
@@ -55,7 +55,7 @@ function Set-TypeShellOperators {
             [Microsoft.PowerShell.PSConsoleReadLine]::Insert('&&')
         }
     }
-    Set-PSReadLineKeyHandler -Chord '||' -BriefDescription "Logical OR" -ScriptBlock {
+    Set-PSReadLineKeyHandler -Chord '|' -BriefDescription "Logical OR" -ScriptBlock {
         param($key, $arg)
         $line = $null
         $cursor = $null
