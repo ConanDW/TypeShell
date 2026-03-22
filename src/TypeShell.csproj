@@ -6,9 +6,15 @@
         <Nullable>enable</Nullable>
         <Deterministic>true</Deterministic>
         <AssemblyName>TypeShell</AssemblyName>
+        <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
         <RootNamespace>TypeShell</RootNamespace>
     </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="System.Management.Automation" Version="7.5.0" />
+        <PackageReference Include="Parlot" Version="1.5.7" />
     </ItemGroup>
+    <Target Name="CopyToModuleRoot" AfterTargets="Build">
+        <Copy SourceFiles="$(OutputPath)$(AssemblyName).dll" DestinationFolder="$(ProjectDir).." />
+        <Copy SourceFiles="$(OutputPath)Parlot.dll" DestinationFolder="$(ProjectDir).." />
+    </Target>
 </Project>

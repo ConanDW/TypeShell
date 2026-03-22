@@ -9,7 +9,6 @@ function Set-TypeShellTypes {
         "float (\w+) = (\d+)"      = '[float]$$$1 = $2'
         "double (\w+) = (\d+)"     = '[double]$$$1 = $2'
         "const (\w+) (\w+) = (.+)" = 'New-Variable -Name $2 -Value ([$1]$3) -Option Constant'
-
     }
     Set-PSReadLineKeyHandler -Chord 'Enter' -BriefDescription 'Strict Types' -ScriptBlock {
         param($key, $arg)
@@ -28,5 +27,4 @@ function Set-TypeShellTypes {
         [Microsoft.PowerShell.PSConsoleReadLine]::AcceptLine()
         return
     }.GetNewClosure()
-    
 }
