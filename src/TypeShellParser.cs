@@ -13,8 +13,6 @@ class TypeParser
         var output = type.And(variableName).Then(x => "[" + x.Item1 + "]$" + x.Item2);
         _powerShellVar = output;
     }
-
-
 }
 class OperatorParser
 {
