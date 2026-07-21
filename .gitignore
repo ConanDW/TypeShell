@@ -1,3 +1,5 @@
 indev
 src/bin/
 src/obj/
+src/TypeShell.csproj
+src/.antlr/

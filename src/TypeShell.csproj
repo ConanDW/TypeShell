@@ -9,12 +9,21 @@
         <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
         <RootNamespace>TypeShell</RootNamespace>
     </PropertyGroup>
+
     <ItemGroup>
+        <PackageReference Include="Antlr4.Runtime.Standard" Version="4.13.1" />
+        <PackageReference Include="Antlr4BuildTasks" Version="12.14.0" />
         <PackageReference Include="System.Management.Automation" Version="7.5.0" />
-        <PackageReference Include="Parlot" Version="1.5.7" />
     </ItemGroup>
+
+    <ItemGroup>
+        <Antlr4 Include="TypeShell.g4" />
+    </ItemGroup>
+
     <Target Name="CopyToModuleRoot" AfterTargets="Build">
-        <Copy SourceFiles="$(OutputPath)$(AssemblyName).dll" DestinationFolder="$(ProjectDir).." />
-        <Copy SourceFiles="$(OutputPath)Parlot.dll" DestinationFolder="$(ProjectDir).." />
+        <ItemGroup>
+            <ModuleFiles Include="$(OutputPath)*.dll" />
+        </ItemGroup>
+        <Copy SourceFiles="@(ModuleFiles)" DestinationFolder="$(ProjectDir)output\" />
     </Target>
 </Project>
