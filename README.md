@@ -70,8 +70,8 @@ Because life is too short for `Invoke-RestMethod`:
 
 ## Requirements
 
-- **PowerShell 7.0+** — this won't work on Windows PowerShell 5.1
-- **PSReadLine** — ships with PowerShell 7 by default, so you're probably fine
+- **PowerShell 7.0+**
+- **PSReadLine**
 
 ## Getting Started
 
