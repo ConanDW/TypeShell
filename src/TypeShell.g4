@@ -3,7 +3,7 @@ grammar TypeShell;
 options { caseInsensitive = true; }
 
 program
-    : (declaration | assignment | .)* EOF
+    : (declaration | assignment | .)*? EOF
     ;
 
 declaration
